@@ -154,7 +154,7 @@ public class NewUserDashboard extends javax.swing.JFrame {
         roomstatus1.setFont(new java.awt.Font("PT Sans", 0, 24)); // NOI18N
         roomstatus1.setText("Room status: Unavailable  ");
         jPanel2.add(roomstatus1);
-        roomstatus1.setBounds(1010, 540, 271, 30);
+        roomstatus1.setBounds(1010, 540, 283, 30);
 
         Location1.setFont(new java.awt.Font("PT Sans", 0, 24)); // NOI18N
         Location1.setText("Location: Jhamsikhel, Lalitpur");
@@ -184,7 +184,7 @@ public class NewUserDashboard extends javax.swing.JFrame {
         roomstatus2.setFont(new java.awt.Font("PT Sans", 0, 24)); // NOI18N
         roomstatus2.setText("Room status: Available  ");
         jPanel2.add(roomstatus2);
-        roomstatus2.setBounds(580, 540, 244, 30);
+        roomstatus2.setBounds(580, 540, 255, 30);
 
         Ratings2.setFont(new java.awt.Font("PT Sans", 0, 24)); // NOI18N
         Ratings2.setText("Rating:       4.5");
@@ -236,7 +236,7 @@ public class NewUserDashboard extends javax.swing.JFrame {
         image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Screenshot 2025-12-10 at 07.19.50.png"))); // NOI18N
         image.setText("jLabel3");
         jPanel2.add(image);
-        image.setBounds(0, 0, 1858, 915);
+        image.setBounds(0, 0, 1853, 915);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 1440, 910);
