@@ -29,22 +29,18 @@ public class ForgetPassword extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        email = new javax.swing.JLabel();
         forgetpass = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        ConfirmPass = new javax.swing.JLabel();
-        Emailicon = new javax.swing.JLabel();
-        Passwordicon = new javax.swing.JLabel();
-        Confirmpasswordicon = new javax.swing.JLabel();
         Resetbutton = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
-        jSeparator3 = new javax.swing.JSeparator();
-        maincolorlabel = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jPasswordField2 = new javax.swing.JPasswordField();
         jScrollPane1 = new javax.swing.JScrollPane();
         Email = new javax.swing.JTextArea();
+        Emaillabel = new javax.swing.JLabel();
+        OTPbutton = new javax.swing.JButton();
+        OTP = new javax.swing.JTextField();
+        OTPverification = new javax.swing.JButton();
+        Newpasswordlabel = new javax.swing.JLabel();
+        Newpassword = new javax.swing.JTextField();
+        OTPlabel = new javax.swing.JLabel();
+        maincolorlabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(700, 450));
@@ -54,49 +50,15 @@ public class ForgetPassword extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(1280, 720));
         jPanel1.setLayout(null);
 
-        email.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        email.setForeground(new java.awt.Color(255, 255, 255));
-        email.setText("Email");
-        jPanel1.add(email);
-        email.setBounds(470, 230, 130, 60);
-
         forgetpass.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        forgetpass.setForeground(new java.awt.Color(255, 255, 255));
-        forgetpass.setText("Forget Password");
+        forgetpass.setForeground(new java.awt.Color(241, 150, 174));
+        forgetpass.setText("Forgot Password");
         jPanel1.add(forgetpass);
         forgetpass.setBounds(500, 70, 290, 60);
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("New Password");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(470, 320, 190, 60);
-
-        ConfirmPass.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        ConfirmPass.setForeground(new java.awt.Color(255, 255, 255));
-        ConfirmPass.setText("Confirmpassword");
-        jPanel1.add(ConfirmPass);
-        ConfirmPass.setBounds(470, 430, 250, 25);
-
-        Emailicon.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        Emailicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Acer\\Downloads\\image 3.png")); // NOI18N
-        jPanel1.add(Emailicon);
-        Emailicon.setBounds(760, 250, 20, 20);
-
-        Passwordicon.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        Passwordicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Acer\\Downloads\\image 1.png")); // NOI18N
-        jPanel1.add(Passwordicon);
-        Passwordicon.setBounds(760, 340, 20, 20);
-
-        Confirmpasswordicon.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        Confirmpasswordicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Acer\\Downloads\\image 1.png")); // NOI18N
-        jPanel1.add(Confirmpasswordicon);
-        Confirmpasswordicon.setBounds(760, 440, 20, 20);
-
         Resetbutton.setBackground(new java.awt.Color(185, 12, 46));
         Resetbutton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        Resetbutton.setForeground(new java.awt.Color(255, 255, 255));
+        Resetbutton.setForeground(new java.awt.Color(241, 150, 174));
         Resetbutton.setText("Reset");
         Resetbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,51 +66,77 @@ public class ForgetPassword extends javax.swing.JFrame {
             }
         });
         jPanel1.add(Resetbutton);
-        Resetbutton.setBounds(510, 540, 240, 50);
-
-        jSeparator1.setBackground(new java.awt.Color(255, 255, 255));
-        jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jSeparator1);
-        jSeparator1.setBounds(470, 270, 310, 20);
-
-        jSeparator2.setBackground(new java.awt.Color(255, 255, 255));
-        jSeparator2.setForeground(new java.awt.Color(255, 255, 255));
-        jSeparator2.setAlignmentX(1.0F);
-        jSeparator2.setAlignmentY(1.0F);
-        jPanel1.add(jSeparator2);
-        jSeparator2.setBounds(470, 360, 310, 10);
-
-        jSeparator3.setBackground(new java.awt.Color(255, 255, 255));
-        jSeparator3.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jSeparator3);
-        jSeparator3.setBounds(470, 460, 310, 20);
-
-        maincolorlabel.setBackground(new java.awt.Color(255, 255, 255));
-        maincolorlabel.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        maincolorlabel.setForeground(new java.awt.Color(255, 255, 255));
-        maincolorlabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Acer\\Downloads\\Screenshot 2025-12-10 123450.png")); // NOI18N
-        jPanel1.add(maincolorlabel);
-        maincolorlabel.setBounds(-20, 0, 1280, 720);
-
-        jPasswordField1.setText("Password");
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jPasswordField1);
-        jPasswordField1.setBounds(470, 340, 310, 22);
-
-        jPasswordField2.setText("Confirmpassword");
-        jPanel1.add(jPasswordField2);
-        jPasswordField2.setBounds(470, 440, 310, 22);
+        Resetbutton.setBounds(510, 550, 240, 50);
 
         Email.setColumns(20);
         Email.setRows(5);
         jScrollPane1.setViewportView(Email);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(460, 246, 330, 30);
+        jScrollPane1.setBounds(430, 200, 370, 30);
+
+        Emaillabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Emaillabel.setForeground(new java.awt.Color(255, 255, 255));
+        Emaillabel.setText("E-mail");
+        jPanel1.add(Emaillabel);
+        Emaillabel.setBounds(430, 180, 70, 20);
+
+        OTPbutton.setBackground(new java.awt.Color(185, 12, 46));
+        OTPbutton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        OTPbutton.setForeground(new java.awt.Color(255, 255, 255));
+        OTPbutton.setText("Send OTP");
+        jPanel1.add(OTPbutton);
+        OTPbutton.setBounds(570, 240, 100, 27);
+
+        OTP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPActionPerformed(evt);
+            }
+        });
+        jPanel1.add(OTP);
+        OTP.setBounds(430, 320, 380, 30);
+
+        OTPverification.setBackground(new java.awt.Color(185, 12, 46));
+        OTPverification.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        OTPverification.setForeground(new java.awt.Color(255, 255, 255));
+        OTPverification.setText("Verify");
+        OTPverification.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPverificationActionPerformed(evt);
+            }
+        });
+        jPanel1.add(OTPverification);
+        OTPverification.setBounds(570, 360, 110, 27);
+
+        Newpasswordlabel.setBackground(new java.awt.Color(255, 102, 102));
+        Newpasswordlabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Newpasswordlabel.setForeground(new java.awt.Color(255, 255, 255));
+        Newpasswordlabel.setText("New Password");
+        jPanel1.add(Newpasswordlabel);
+        Newpasswordlabel.setBounds(430, 420, 120, 20);
+
+        Newpassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NewpasswordActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Newpassword);
+        Newpassword.setBounds(430, 440, 380, 30);
+
+        OTPlabel.setBackground(new java.awt.Color(255, 255, 255));
+        OTPlabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        OTPlabel.setForeground(new java.awt.Color(255, 255, 255));
+        OTPlabel.setText("OTP");
+        jPanel1.add(OTPlabel);
+        OTPlabel.setBounds(430, 300, 70, 20);
+
+        maincolorlabel.setBackground(new java.awt.Color(255, 255, 255));
+        maincolorlabel.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        maincolorlabel.setForeground(new java.awt.Color(51, 51, 51));
+        maincolorlabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Acer\\Downloads\\Screenshot 2025-12-10 123450.png")); // NOI18N
+        maincolorlabel.setText("Enter the OTP");
+        jPanel1.add(maincolorlabel);
+        maincolorlabel.setBounds(-20, 10, 1430, 720);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -172,9 +160,17 @@ public class ForgetPassword extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ResetbuttonActionPerformed
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+    private void OTPverificationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPverificationActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+    }//GEN-LAST:event_OTPverificationActionPerformed
+
+    private void OTPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OTPActionPerformed
+
+    private void NewpasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewpasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NewpasswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -202,22 +198,18 @@ public class ForgetPassword extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel ConfirmPass;
-    private javax.swing.JLabel Confirmpasswordicon;
     private javax.swing.JTextArea Email;
-    private javax.swing.JLabel Emailicon;
-    private javax.swing.JLabel Passwordicon;
+    private javax.swing.JLabel Emaillabel;
+    private javax.swing.JTextField Newpassword;
+    private javax.swing.JLabel Newpasswordlabel;
+    private javax.swing.JTextField OTP;
+    private javax.swing.JButton OTPbutton;
+    private javax.swing.JLabel OTPlabel;
+    private javax.swing.JButton OTPverification;
     private javax.swing.JButton Resetbutton;
-    private javax.swing.JLabel email;
     private javax.swing.JLabel forgetpass;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JLabel maincolorlabel;
     // End of variables declaration//GEN-END:variables
 }
