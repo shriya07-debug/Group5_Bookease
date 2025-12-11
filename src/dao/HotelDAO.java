@@ -8,6 +8,6 @@ package dao;
  *
  * @author sailenawale
  */
-public class demo {
+public class HotelDAO {
     
 }

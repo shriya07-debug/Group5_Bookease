@@ -209,9 +209,10 @@ public class Dasboard extends javax.swing.JFrame {
         jPanel1.add(logo);
         logo.setBounds(0, 600, 130, 90);
 
+        slogan.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
         slogan.setText("Hotel in a tap");
         jPanel1.add(slogan);
-        slogan.setBounds(90, 660, 90, 17);
+        slogan.setBounds(90, 660, 90, 16);
 
         viewdetails3.setBackground(new java.awt.Color(246, 80, 90));
         viewdetails3.setFont(new java.awt.Font("PT Sans", 0, 18)); // NOI18N
